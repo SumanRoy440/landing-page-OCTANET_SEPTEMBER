@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="logo">LyZoo</div>
+            <a href="#" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content-section">
+            <h1>Devlopment Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis deserunt ex, dolorem vel officia, <br>nam perferendis ipsa odio ullam, est impedit modi aperiam consequatur rem laudantium iusto doloremque quam tempore</p>
+            <div class="button">
+                <a href="">Show more</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        const toggleBtn = document.getElementsByClassName("toggle-btn")[0]
+        const navmenu = document.getElementsByClassName("nav-menu")[0]
+        toggleBtn.addEventListener("click", () =>{
+            navmenu.classList.toggle("active")
+        })
+    </script>
+</body>
+</html>
